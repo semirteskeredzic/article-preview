@@ -21,7 +21,11 @@ body {
 }
 
 .card-bottom--share-container {
-    display: none;
+    display: flex;
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 0 0 10px 10px;
+    padding: 15px 0 30px 30px;
+
 }
 
 .card-text--container {
@@ -50,6 +54,7 @@ body {
 .card-bottom--main-container {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px 30px;
 }
 
 .card-bottom--image-container {
@@ -109,7 +114,9 @@ body {
     color: hsl(210, 46%, 95%);
 }
 
-.card-bottom--share-container {
+.card-bottom--share-text {
+    color:hsl(214, 17%, 51%);
+    text-transform: uppercase;
 }
 
 
