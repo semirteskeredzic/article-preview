@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Article preview component</title>
 
+  <!-- Alpine JS -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +19,10 @@
   <!-- CSS Stylesheet -->
   <link rel="Stylesheet" type="text/css" href="./styles/styles.css">
 
-  <!-- External JS -->
-  <link href="./js/main.js">
-
 </head>
 <body>
-  <div class="main--container">
+  <div class="main--container" x-data="{open: false}" >
     <div class="card-image--container">
-      <img class="card--image" src="images/drawers.jpg" />
     </div>
     <div class="card-text--container">
       <h1 class="card-text--title">Shift the overall look and feel by adding these wonderful 
@@ -32,19 +31,38 @@
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.</p>
     </div>
-    <div class="card-bottom--container">
-      <img class="card-bottom--image" src="./images/avatar-michelle.jpg" />
-      <span class="card-bottom--name">Michelle Appleton</span>
-      <span class="card-bottom--date">28 Jun 2020</span>
-      <button class="card-bottom--button-share-open" />
-    </div>
-    <div class="card-bottom--share-container">
-      <span class="card-bottom--share-text">Share</span>
-      <img class="card-bottom--share-icon" src="./images/icon-facebook.svg" />
-      <img class="card-bottom--share-icon" src="./images/icon-twitter.svg" />
-      <img class="card-bottom--share-icon" src="./images/icon-pinterest.svg" />
-      <button class="card-bottom--button-share-close" />
-    </div>
+
+
+    
+      <div x-show="!open" class="card-bottom--main-container">
+        <div class="card-bottom--info-container">
+          <div class="card-bottom--image-container">
+            <img class="card-bottom--image" src="./images/avatar-michelle.jpg" />
+          </div>
+          <div class="card-bottom--additional-container">
+            <span class="card-bottom--name">Michelle Appleton</span>
+            <span class="card-bottom--date">28 Jun 2020</span>
+          </div>  
+        </div>
+        <div class="card-bottom--button-container">
+          <button @click="open = !open" class="card-bottom--button-share-open"><img class="card-button--icon" src="./images/icon-share.svg"/></button>
+        </div>
+      </div>  
+    
+      <div x-show="open" class="card-bottom--share-container">
+        <div class="card-bottom--share-info-container">
+          <span class="card-bottom--share-text">Share</span>
+          <div class="card-bottom--share-icon-container">
+            <img class="card-bottom--share-icon" src="./images/icon-facebook.svg" />
+            <img class="card-bottom--share-icon" src="./images/icon-twitter.svg" />
+            <img class="card-bottom--share-icon" src="./images/icon-pinterest.svg" />
+          </div>
+        </div>
+        <button  @click="open = !open" class="card-bottom--button-share-close"><img class="card-button--icon-share" src="./images/icon-share.svg"/></button>
+      </div>
+
+    
+    
   </div>
   
   <div class="attribution">
