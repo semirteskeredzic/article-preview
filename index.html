@@ -52,9 +52,11 @@
       <div x-show="open" class="card-bottom--share-container">
         <div class="card-bottom--share-info-container">
           <span class="card-bottom--share-text">Share</span>
-          <img class="card-bottom--share-icon" src="./images/icon-facebook.svg" />
-          <img class="card-bottom--share-icon" src="./images/icon-twitter.svg" />
-          <img class="card-bottom--share-icon" src="./images/icon-pinterest.svg" />
+          <div class="card-bottom--share-icon-container">
+            <img class="card-bottom--share-icon" src="./images/icon-facebook.svg" />
+            <img class="card-bottom--share-icon" src="./images/icon-twitter.svg" />
+            <img class="card-bottom--share-icon" src="./images/icon-pinterest.svg" />
+          </div>
         </div>
         <button  @click="open = !open" class="card-bottom--button-share-close"><img class="card-button--icon-share" src="./images/icon-share.svg"/></button>
       </div>
