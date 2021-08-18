@@ -32,7 +32,7 @@
           it felt slightly bare and uninviting. I’ve got some simple tips 
           to help you make any room feel complete.</p>
       </div>
-      <div x-show="!open" class="card-bottom--main-container">
+      <div class="card-bottom--main-container">
         <div class="card-bottom--info-container">
           <div class="card-bottom--image-container">
             <img class="card-bottom--image" src="./images/avatar-michelle.jpg" />
@@ -43,7 +43,8 @@
           </div>  
         </div>
         <div class="card-bottom--button-container">
-          <button @click="open = !open" class="card-bottom--button-share-open"><img class="card-button--icon" src="./images/icon-share.svg"/></button>
+          <button x-show="!open" @click="open = !open" class="card-bottom--button-share-open"><img class="card-button--icon" src="./images/icon-share.svg"/></button>
+          <button x-show="open"  @click="open = !open" class="card-bottom--button-share-close-additional"><img class="card-button--icon-share" src="./images/icon-share.svg"/></button> 
         </div>
       </div>  
       <div x-show="open" class="card-bottom--share-container">
