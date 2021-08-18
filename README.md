@@ -26,7 +26,7 @@ Users should be able to:
 ![Screenshot Desktop](./screenshots/screenshot_desktop_articlepreview.png)
 ![Screenshot Desktop Active](./screenshots/screenshot_desktop_articlepreview_active.png)
 ![Screenshot Mobile](./screenshots/screenshot_mobile_articlepreview.png)
-![Screenshot Mobile Active](./screenshots/screenshot_desktop_articlepreview_active.png)
+![Screenshot Mobile Active](./screenshots/screenshot_mobile_articlepreview_active.png)
 
 ### Links
 
