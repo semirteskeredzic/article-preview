@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-with-html-css-and-alpinejs-4WypILnhr)
 - Live Site URL: [Live Site URL](https://semirteskeredzic.github.io/article-preview/)
 
 ## My process
